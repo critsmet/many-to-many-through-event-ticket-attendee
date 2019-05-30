@@ -4,7 +4,7 @@ Let's say we're building an app to sell tickets for events. Our app will need th
 
 We can visualize the relationship of our models like this:
 
-Event >- Ticket -< Attendee
+Event -< Ticket >- Attendee
 
 When describing this relationship, we'd say an `Event` has many `Attendee`s through `Ticket`s and also that an `Attendee` has many `Event`s through `Ticket`s. A `Ticket` belongs to an `Event` and an `Attendee.`
 
