@@ -28,6 +28,13 @@ class Attendee
         end
         money
     end
+
+    def venues
+        venues = self.events.collect do |event|
+            event.venue
+        end
+        venues.uniq
+    end
 end
 
 # Attendee.all

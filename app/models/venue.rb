@@ -31,4 +31,12 @@ class Venue
         end
         attendee_array.flatten
     end
+
+    def guest_lists
+        guest_lists = {}
+        self.events.each do |event|
+            guest_lists[event.name] = event.attendees
+        end
+        guest_lists
+    end
 end
